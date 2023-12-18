@@ -22,3 +22,4 @@ To set up the frontend, follow these steps:
     `npm start`
 
 You should now be able to access the site by going to http://localhost:3000 in your web browser.
+![bank-tree](https://github.com/ennisseo/ArgentBank_OCP13/assets/96881789/2eb7707e-64e2-43ff-876b-4436c836b4a6)
