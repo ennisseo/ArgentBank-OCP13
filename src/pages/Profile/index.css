@@ -1,0 +1,74 @@
+.header {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    padding-top: 2rem;
+}
+
+.edit-form {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 20px;
+    width: 25%;
+    justify-content: center;
+}
+
+.left-container,
+.right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.left-container {
+    position: relative;
+}
+
+.edit-form input {
+    padding: 5px;
+}
+
+.edit-form button {
+    font-weight: bold;
+    padding: 5px;
+    width: 50%;
+    color: #fff;
+}
+
+.save-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-color: #00bc77;
+    background-color: #00bc77;
+}
+
+.save-btn:hover {
+    border-color: #00a86b;
+    background-color: #00a86b;
+}
+
+.cancel-btn {
+    border-color: #e63946;
+    background-color: #e63946;
+}
+
+.cancel-btn:hover {
+    border-color: #e42836;
+    background-color: #e42836;
+}
+
+@media (max-width: 1024px) {
+    .edit-form {
+        width: 60%;
+    }
+
+    .left-container,
+    .right-container {
+        width: 50%;
+    }
+}
