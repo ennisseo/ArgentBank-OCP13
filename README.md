@@ -22,3 +22,4 @@ To set up the frontend, follow these steps:
     `npm start`
 
 You should now be able to access the site by going to http://localhost:3000 in your web browser.
+<img width="228" alt="argentBankLogo" src="https://github.com/ennisseo/ArgentBank_OCP13/assets/96881789/de41ae60-d28d-413a-a630-d97d09f9b2ed">
