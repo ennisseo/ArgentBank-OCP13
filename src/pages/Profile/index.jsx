@@ -18,6 +18,9 @@ function Profile() {
             try {
                 const userProfileData = await apiService.getUserProfile(token)
                 dispatch(setProfile(userProfileData));
+
+                setEditedFirstName(userProfileData.firstName);
+                setEditedLastName(userProfileData.lastName);
             } catch (error) {
                 console.error('Error fetching user profile:', error.message);
             }
@@ -30,9 +33,16 @@ function Profile() {
         setIsEditing(true);
     };
 
-    const handleSaveClick = () => {
+    const handleSaveClick = async () => {
         dispatch(updateUserName({ firstName: editedFirstName, lastName: editedLastName }));
         setIsEditing(false);
+
+        // allows first and last name modification to be permanent by modifying database
+        try {
+            await apiService.updateUserProfile(token, { firstName: editedFirstName, lastName: editedLastName });
+        } catch (error) {
+            console.error('Error updating user profile:', error.message);
+        }
     };
 
     const handleCancelClick = () => {
